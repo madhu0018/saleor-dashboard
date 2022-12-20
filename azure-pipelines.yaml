@@ -10,8 +10,9 @@ stages:
   - job: imagebuild
     steps:
     - task: Docker@2
-      inputs:   
+      inputs:
+        containerRegistry: 'dockerhub'
+        repository: 'mandhutony'
         command: 'buildAndPush'
-        Dockerfile: ./Dockerfile
-        tags: mandhutony/saleor:1.0
-        containerRegistry: dockerhub
+        Dockerfile: './Dockerfile'
+        tags: 'mandhutony/saleor:1.0'
