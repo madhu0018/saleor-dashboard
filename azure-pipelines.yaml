@@ -15,4 +15,4 @@ stages:
         repository: 'madhutony'
         command: 'buildAndPush'
         Dockerfile: './Dockerfile'
-        tags: 'madhutony/saleor:taG'
+        tags: 'saleor'
