@@ -9,9 +9,8 @@ stages:
   jobs:
   - job: imagebuild
     steps:
-      - task:
+    - task:
         inputs:   
           command: 'buildAndPush'
           Dockerfile: .
           tags: mandhutony/saleor:1.0
-           
