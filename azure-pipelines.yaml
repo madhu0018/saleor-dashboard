@@ -9,10 +9,9 @@ stages:
   jobs:
   - job: imagebuild
     steps:
-    - script:
-         docker info
-         docker image build -t saleordashboard:1.0 
-         docker image tag saleordashboard:1.0 madhutony/saleordashboard:1.0
-         docker image push madhutony/saleordashboard:1.0 
-         docker image ls
-         
+      - task:
+        inputs:   
+          command: 'buildAndPush'
+          Dockerfile: .
+          tags: mandhutony/saleor:1.0
+           
