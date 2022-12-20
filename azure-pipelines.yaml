@@ -9,7 +9,7 @@ stages:
   jobs:
   - job: imagebuild
     steps:
-    - script: !
+    - script:
          docker image build -t saleordashboard:1.0 
          docker image tag saleordashboard:1.0 madhutony/saleordashboard:1.0
          docker image push madhutony/saleordashboard:1.0 
