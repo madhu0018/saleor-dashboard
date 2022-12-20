@@ -14,3 +14,4 @@ stages:
         command: 'buildAndPush'
         Dockerfile: ./Dockerfile
         tags: mandhutony/saleor:1.0
+        containerRegistry: dockerhub
