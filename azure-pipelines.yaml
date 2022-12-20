@@ -12,7 +12,6 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'dockerhub'
-        repository: 'mandhutony'
         command: 'buildAndPush'
         Dockerfile: './Dockerfile'
         tags: 'mandhutony/saleor:1.0'
