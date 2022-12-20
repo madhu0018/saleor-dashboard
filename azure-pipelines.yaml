@@ -2,7 +2,7 @@
 trigger:
 - main
 
-pool: WORKSHOP
+pool: NTR
 
 stages:
 - stage: image
