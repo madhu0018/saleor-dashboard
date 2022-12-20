@@ -16,4 +16,3 @@ stages:
         command: 'buildAndPush'
         Dockerfile: './Dockerfile'
         tags: 'saleor'
-        containerRegistry: dockerhub
