@@ -12,5 +12,5 @@ stages:
     - task: Docker@2
       inputs:   
         command: 'buildAndPush'
-        Dockerfile: .
+        Dockerfile: ./Dockerfile
         tags: mandhutony/saleor:1.0
