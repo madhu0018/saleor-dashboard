@@ -9,7 +9,7 @@ stages:
   jobs:
   - job: imagebuild
     steps:
-    - task:
+    - task: Docker@2
       inputs:   
         command: 'buildAndPush'
         Dockerfile: .
